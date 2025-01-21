@@ -243,7 +243,7 @@ header article:nth-of-type(1) {
     }
     
     nav.toonMenu button img {
-       content: url(../icons/x-icon.svg); 
+       content: url(../images/x-icon.svg); 
        z-index: 20000;
        
     }

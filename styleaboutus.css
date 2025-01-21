@@ -75,11 +75,7 @@ nav.toonMenu ul {
     transform: translateX(0);
 }
 
-nav.toonMenu button img {
-   content: url(../icons/x-icon.svg); 
-   z-index: 20000;
-   
-}
+
 
 /* List Items */
 nav ul li {
