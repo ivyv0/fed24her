@@ -108,7 +108,7 @@ nav.toonMenu ul {
 }
 
 nav.toonMenu button img::after {
-   content: url(../icons/x-icon.svg); 
+   content: url(../images/x-icon.svg); 
    z-index: 20000;
    
 }
