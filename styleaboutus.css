@@ -203,7 +203,7 @@ footer section:nth-of-type(4) h5:last-of-type {
 
 footer section:nth-of-type(4) p {
     font-size: 0.8rem;
-    font-family: "Ivy", sans-serif;;
+    font-family: "Ivy", sans-serif;
     order: -1;
     color: grey;
 }
