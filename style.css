@@ -99,7 +99,7 @@ nav ul {
     margin: 0;
     padding: 3em;
     z-index: 1000; 
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
 }    
 
 /* Menu zichtbaar maken */
@@ -189,7 +189,7 @@ header article:nth-of-type(1) {
         margin: 0;
         padding: 3em;
         z-index: 10000; 
-        font-family: "Ivy";
+        font-family: "Ivy", sans-serif;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
 
@@ -203,12 +203,12 @@ header article:nth-of-type(1) {
         color: #000;
         text-decoration: none;
         gap: 2em;
-        font-family: "Ivy";
+        font-family: "Ivy", sans-serif;
 
     }
 
     nav ul li h2 {
-        font-family: "IvyBold";
+        font-family: "IvyBold", sans-serif;
         font-size: 1.8rem;
         color: #000;
         text-decoration: none;
@@ -276,7 +276,7 @@ header article:nth-of-type(1) {
         visibility: visible;
         display: flex;
         font-size: 1em;
-        font-family: "Ivy";
+        font-family: "Ivy", sans-serif;
        
     }
 

@@ -67,7 +67,7 @@ nav ul {
     margin: 0;
     padding: 3em;
     z-index: 1000; 
-    font-family: "Ivy", sans-serif;;
+    font-family: "Ivy", sans-serif;
 }    
 
 /* Menu zichtbaar maken */
@@ -170,6 +170,7 @@ footer section:nth-of-type(2) h3, h4 {
 footer section:nth-of-type(2) ul {
     display: flex;
     gap: 1rem;
+    font-family: "IvyBold", sans-serif;
     
 }
 
@@ -188,6 +189,7 @@ footer section:nth-of-type(2) ul img {
 footer section:nth-of-type(3) article {
     margin-bottom: 1rem;
     font-size: 1.5em;
+    font-family: "IvyBold", sans-serif;
     
 }
 
