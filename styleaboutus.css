@@ -25,7 +25,7 @@ header {
 /**********************/
 nav {
     position: relative;
-    left: 10em;
+   
 }
 
 /* Hamburger Button */
@@ -37,8 +37,25 @@ nav .menu-toggle {
 }
 
 nav .menu-toggle img {
-   width: 5em;
+   width: 3em;
 } 
+
+@media (min-width:1020px) {
+    nav img {
+        width: 30%;
+        padding-left: 2em;
+    }
+
+    nav {
+        position: relative;
+        left: 8em;
+    }
+    
+   
+}
+
+
+
 
 nav img {
     width: 4em;
