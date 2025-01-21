@@ -1,0 +1,426 @@
+
+body {
+    font-family: 'Ivy', sans-serif;;
+    color: var( --color-text);
+    margin: 0; 
+    background-color: #8AADB2;
+}
+
+header h1 img {
+    position: absolute;
+    top: 0.2em;
+    left: 0.6em;
+    width: 2.2em;
+    height: 2.2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+/**********************/
+/* NAVIGATION STYLES */
+/**********************/
+nav {
+    position: relative;
+    left: 10em;
+}
+
+/* Hamburger Button */
+nav .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+nav .menu-toggle img {
+   width: 5em;
+} 
+
+nav img {
+    width: 4em;
+    padding-left: 2em;
+}
+
+/**********************/
+/* SLIDE MENU STYLES */
+/**********************/
+nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh; 
+    background: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 3em;
+    z-index: 1000; 
+    font-family: "Ivy", sans-serif;;
+}    
+
+/* Menu zichtbaar maken */
+nav.toonMenu ul {
+    transform: translateX(0);
+}
+
+nav.toonMenu button img {
+   content: url(../icons/x-icon.svg); 
+   z-index: 20000;
+   
+}
+
+/* List Items */
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+/**********************/
+/* MEDIA QUERY (GROTE SCHERMEN) */
+/**********************/
+@media (min-width: 768px) {
+    nav ul {
+        position: static;
+        transform: none;
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    nav ul li span {
+        display: none;
+    }
+
+    nav .auth-buttons {
+        margin-top: 0;
+    }
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5em;
+  
+}
+
+footer section:nth-of-type(3) {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap:1em; 
+   flex-wrap: wrap;
+    
+}
+
+footer section:nth-of-type(1) h2 > img {
+  width: 8em;
+  padding-top: 1rem;
+}
+
+footer section:nth-of-type(2) h3, h4 {
+    width: 8em;
+    padding-top: 1rem;
+    font-family: "IvyBold", sans-serif;
+}
+  
+footer section:nth-of-type(2) ul {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+footer section:nth-of-type(2) ul img {
+    width: 40%;
+    height: 90%;
+}
+
+@media (min-width:1020px) {
+    footer section:nth-of-type(2) ul img {
+        width: 20%;
+        height: 90%;
+    } 
+}
+
+footer section:nth-of-type(3) article {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    
+}
+
+footer section:nth-of-type(4) h5:first-of-type {
+    font-size: 1rem;
+    font-family: "Ivy", sans-serif;
+}
+
+footer section:nth-of-type(4) h5:last-of-type {
+    font-size: 0.8rem;
+    font-family: "Ivy", sans-serif;
+    order: -1;
+    color: grey;
+}
+
+footer section:nth-of-type(4) p {
+    font-size: 0.8rem;
+    font-family: "Ivy", sans-serif;;
+    order: -1;
+    color: grey;
+}
+
+footer ul {
+    gap: 1rem;
+    text-decoration: none;
+    padding: 0;
+    margin: 0; 
+    order: 1;
+    list-style: none;
+    font-size: 0.7em;
+}
+
+
+footer section:nth-of-type(4) ul{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+footer img {
+    width: 5em;
+    
+}
+
+ 
+footer li a {
+    text-decoration: none;
+    cursor: default;
+    color: grey;
+}
+
+/* MAIN ABOUT HYER */
+
+main section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3),
+section:nth-of-type(4) {
+    margin: 1.2em;
+}
+
+main section:nth-of-type(1) {
+    padding-top: 7.5em;
+    margin: 1.2em;
+}
+
+main section:nth-of-type(1) h2 {
+    border-top: 1.1px solid black;
+    font-family: "IvyBold", sans-serif;
+    font-size: 1.8em;
+    padding-top: 0.5em;
+}
+
+main section:nth-of-type(1) p{
+    font-weight: "Ivy", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+main section:nth-of-type(1) img:first-of-type{
+    width: 5%;
+    padding-top: 1.5em;
+    padding-bottom: 0.2em;
+}
+
+main section:nth-of-type(1) img:last-of-type{
+    width: 100%;
+    padding-bottom: 0.2em;
+}
+
+/* Behind Hyer */
+
+main section:nth-of-type(2) {
+    margin: 1.2em;
+}
+
+main section:nth-of-type(2) h2 {
+    font-family: "IvyBold", sans-serif;
+    font-size: 2em;
+}
+
+main section:nth-of-type(2) p{
+    font-family: "Ivy", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+main section:nth-of-type(2) article {
+   flex-direction: column-reverse;
+   display: flex;
+   gap: 0.1em;
+}
+
+main section:nth-of-type(2) article h3{
+    font-family: "IvyBold",sans-serif;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    order: 1;
+
+}
+
+main section:nth-of-type(2) article:first-of-type h3::after {
+    content: "Founder";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+main section:nth-of-type(2) article:last-of-type h3::after {
+    content: "Operations";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+main section:nth-of-type(2) article img{
+    width: 100%;
+    padding-bottom: 0.2em;
+    order: 1;
+
+}
+
+main section:nth-of-type(2) article p{
+    font-family: "Ivy", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    order: 0;
+
+}
+
+/* What our clients say */
+main section:nth-of-type(3) {
+    padding-top: 2em;
+}
+
+main section:nth-of-type(3) img {
+    width: 20%;
+    opacity: 0.2;
+    display: flex; 
+    position: relative;
+    z-index: -2;
+    bottom: 1em;
+    right: 2em;
+
+}
+
+main section:nth-of-type(3) h3 {
+    border-top: 1.1px solid black;
+    font-size: 2em;
+    font-family: "IvyBold", sans-serif;
+    padding-top: 1em;
+}
+
+main section:nth-of-type(3) p:first-of-type{
+    z-index: 1;
+    position: absolute;
+    margin: 2em;
+    font-size: 1.1em;
+}
+
+main section:nth-of-type(3) p:last-of-type{
+    z-index: 2;
+    position: absolute;
+    padding-top: 9em;
+    margin: 2em;
+    font-family: "IvyBold", sans-serif;
+  
+}
+
+/* Our Time Line */
+main section:nth-of-type(4) {
+    border-top: 1.1px solid black;
+    padding-top: 0.5em;
+    margin-top: 8em;
+    line-height: 0.2em;
+}
+
+main section:nth-of-type(4) h4{
+    font-family: "IvyBold", sans-serif;
+    font-size: 2em;
+}
+
+main section:nth-of-type(4) h5{
+    font-family: "IvyBold", sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+}
+
+main section:nth-of-type(4) p{
+    font-family: "Ivy", sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    margin-top: 0.5em;
+   
+}
+
+/* Laatste section */
+main section:nth-of-type(5) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    
+}
+
+main section:nth-of-type(5) h5 {
+   font-size: 1.8em;
+   font-family: "IvyBold", sans-serif;
+   margin-left: 1.2em;
+   margin-right: 1.2em;
+   border-top: 1.1px solid black;
+  
+}
+main section:nth-of-type(5) img {
+    width: 100%;
+   
+ }
+
+
+
+
+
+

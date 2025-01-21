@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 133.59 127.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+      }
+    </style>
+    <symbol id="Pijl_28" data-name="Pijl 28" viewBox="0 0 56.64 59.45">
+      <g>
+        <rect class="cls-1" x="5.7" y="16.2" width="45.72" height="31.75"/>
+        <polygon class="cls-2" points="33.51 0 33.98 42.17 56.64 24.7 56.64 37.76 28.54 59.45 0 37.92 .31 25.17 23.76 42.8 23.6 .16 33.51 0"/>
+      </g>
+    </symbol>
+  </defs>
+  <use width="56.64" height="59.45" transform="translate(24.59 8.79) rotate(.47) scale(1.52 1.82)" xlink:href="#Pijl_28"/>
+</svg>

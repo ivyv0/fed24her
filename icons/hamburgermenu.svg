@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.48 182.55">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="98.49" cy="91.64" rx="80.7" ry="78.12"/>
+  <rect class="cls-2" x="75.48" y="74.72" width="51.32" height="1.48"/>
+  <rect class="cls-2" x="75.69" y="91.35" width="51.32" height="1.48"/>
+  <rect class="cls-2" x="75.69" y="108.27" width="51.32" height="1.48"/>
+</svg>
